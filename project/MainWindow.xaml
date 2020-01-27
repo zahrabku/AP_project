@@ -1,0 +1,154 @@
+﻿<Window x:Class="project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project"
+        mc:Ignorable="d"
+        Title="felit ^_^" Height="420" Width="550" ResizeMode="NoResize" WindowState="Normal" WindowStartupLocation="CenterScreen" FontFamily="Comic Sans MS"
+        Icon=" ./icon/Mag1cwind0w-O-Sunny-Day-Osd-sun.ico">
+    <Border Padding="10" Background="MistyRose">
+        <Grid>
+            <TabControl >
+                <TabItem  Header="solve" Background="DarkGray" Margin="10 0 5 0" Width="255" FontWeight="DemiBold" FontFamily="Comic Sans MS" BorderThickness="1" BorderBrush="#555">
+                    <StackPanel Background="MistyRose">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="30"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Column="0" Grid.Row="0" Text="First Name :" Margin="5 5 10 0" FontWeight="DemiBold" FontFamily="Comic Sans MS"/>
+                            <TextBlock Grid.Column="1" Grid.Row="0" Text="Last Name :" Margin="5 5 0 0" FontWeight="DemiBold" FontFamily="Comic Sans MS"/>
+                            <TextBlock Grid.Column="0" Grid.Row="2" Text="Age :" Margin="5 5 10 0" FontWeight="DemiBold" FontFamily="Comic Sans MS"/>
+                            <TextBlock Grid.Column="1" Grid.Row="2" Text="City :" Margin="5 5 0 0" FontWeight="DemiBold" FontFamily="Comic Sans MS"/>
+                            <TextBox x:Name="solve_firstNameTextBox" Grid.Row="1" Grid.Column="0" Margin="5 0 10 0"  Background="GhostWhite" BorderThickness="1" BorderBrush="#555" />
+                            <TextBox x:Name="solve_LastNameTextBox" Grid.Row="1" Grid.Column="1" Margin="5 0 5 0" Background="GhostWhite" BorderThickness="1" BorderBrush="#555"/>
+                            <TextBox x:Name="solve_AgeTextBox" Grid.Row="3" Grid.Column="0" Margin="5 0 10 0" Background="GhostWhite" BorderThickness="1" BorderBrush="#555"/>
+                            <TextBox x:Name="solve_CityTextBox" Grid.Row="3" Grid.Column="1" Margin="5 0 5 0" Background="GhostWhite" BorderThickness="1" BorderBrush="#555"/>
+                        </Grid>
+                        <Grid Height="232" Margin="0,0,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="181"/>
+                                <RowDefinition Height="38"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="323"/>
+                                <ColumnDefinition Width="200" />
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="29"/>
+                                    <RowDefinition Height="131"/>
+                                    <RowDefinition Height="20"/>
+                                </Grid.RowDefinitions>
+                                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Equations :" Margin="5,5,0,5" FontSize="15" FontWeight="ExtraBold" FontFamily="Comic Sans MS"/>
+                                    <TextBlock Grid.Column="0" Grid.Row="3"  Text="Answer :" Margin="5,5,0,0" FontWeight="DemiBold" FontFamily="Comic Sans MS"/>
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBox x:Name="a1" Grid.Column="0" Grid.Row="0" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray"  Margin="5 0 0 0" TextAlignment="Center"/>
+                                    <TextBox x:Name="X1" Text="x" Grid.Column="1" Grid.Row="0" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="b1" Grid.Column="2" Grid.Row="0" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray"  TextAlignment="Center"/>
+                                    <TextBox x:Name="Y1" Text="y" Grid.Column="3" Grid.Row="0" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="c1" Grid.Column="4" Grid.Row="0" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="Z1" Text="z" Grid.Column="5" Grid.Row="0" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="EQ1" Text="=" Grid.Column="6" Grid.Row="0" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="EQQuant1" Grid.Column="7" Grid.Row="0" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="a2" Grid.Column="0" Grid.Row="1" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" Margin="5 0 0 0" TextAlignment="Center"/>
+                                    <TextBox x:Name="X2" Text="x" Grid.Column="1" Grid.Row="1" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="b2" Grid.Column="2" Grid.Row="1" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="Y2" Text="y" Grid.Column="3" Grid.Row="1" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="c2" Grid.Column="4" Grid.Row="1" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="Z2" Text="z" Grid.Column="5" Grid.Row="1" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="EQ2" Text="=" Grid.Column="6" Grid.Row="1" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="EQQuant2" Grid.Column="7" Grid.Row="1" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="a3" Grid.Column="0" Grid.Row="2" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" Margin="5 0 0 0" TextAlignment="Center"/>
+                                    <TextBox x:Name="X3" Text="x" Grid.Column="1" Grid.Row="2" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="b3" Grid.Column="2" Grid.Row="2" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="Y3" Text="y" Grid.Column="3" Grid.Row="2" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="c3" Grid.Column="4" Grid.Row="2" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="Z3" Text="z" Grid.Column="5" Grid.Row="2" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="EQ3" Text="=" Grid.Column="6" Grid.Row="2" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    <TextBox x:Name="EQQuant3" Grid.Column="7" Grid.Row="2" Background="GhostWhite" BorderThickness="1" BorderBrush="LightGray" TextAlignment="Center"/>
+                                    
+                                </Grid>
+                            </Grid>
+                            
+                            <TextBox x:Name="solve_AnswerTextBox" Grid.Column="0" Grid.Row="1" IsReadOnly="True" Background="LightBlue" BorderBrush="#555" BorderThickness="1" Margin="5,5,0,0" HorizontalScrollBarVisibility="Auto"/>
+                            <Button x:Name="boombutton" Click="boombutton_Click" Grid.Row="0" Background="MistyRose" BorderThickness="0" Grid.ColumnSpan="2" Margin="323,10,25.2,43" Grid.RowSpan="2">
+                                <Image Margin="0 0 0 0" Source="./icon/Firstfear-Whistlepuff-Games.ico" Width="165" RenderTransformOrigin="0.353,0.513" Height="161"/>
+                            </Button>
+                            <TextBlock Text="BoOM!!"  TextAlignment="Center" VerticalAlignment="Center" FontSize="45" FontWeight="UltraBlack" FontFamily="Comic Sans MS" Margin="4.8,172,23.2,-13.6" Height="62" Grid.Column="1" Grid.RowSpan="2"/>
+                        </Grid>
+
+                    </StackPanel>
+                </TabItem>
+                <TabItem  Header="query" Background="DarkGray" Margin="10 0 5 0 " Width="255" FontWeight="DemiBold" FontFamily="Comic Sans MS" BorderBrush="#555" BorderThickness="1"  >
+                    <Grid Background="MistyRose">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="•Name :"  Margin="5 5 0 40 "/>
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="•Last Name :" Margin="5 5 0 40 "/>
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="•City :" Margin="5 5 0 40 "/>
+                            <TextBlock Grid.Row="3" Grid.Column="0" Text="•Age Greater Than :" Margin="5 5 0 40 "/>
+                            <TextBlock Grid.Row="4" Grid.Column="0" Text="•Age Less Then :" Margin="5 5 0 40 "/>
+                            <TextBox x:Name="query_NameTextBox" Grid.Row="0" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite"/>
+                            <TextBox x:Name="query_LastNameTextBox" Grid.Row="1" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite"/>
+                            <TextBox x:Name="query_CityTextBox" Grid.Row="2" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite"/>
+                            <TextBox x:Name="query_AgeGTTextBox" Grid.Row="3" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite" VerticalContentAlignment="Center" FontSize="16"/>
+                            <TextBox x:Name="query_AgeLTtextBox" Grid.Row="4" Grid.Column="0" Margin="5 30 5 5" Background="GhostWhite" VerticalContentAlignment="Center" FontSize="16"/>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="•Equations :" Margin="5 5 0 90"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="•Answers :" Margin="5 5 0 35"/>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="•Result :" Margin="5 5 0 90"/>
+                            <TextBox x:Name="query_equationTextBox" Grid.Row="0" Grid.Column="1" Margin="5 25 5 5"  Background="GhostWhite"/>
+                            <TextBox x:Name="query_AnswerTextBox" Grid.Row="1" Grid.Column="1" Margin="5 25 5 5" Background="GhostWhite"/>
+                            <Button x:Name="query_bottun" Click="query_bottun_Click" Grid.Row="2" Grid.Column="1" Margin="5 5 5 5" Background="DarkGray" Content="Submit" FontSize="30" BorderThickness="2" BorderBrush="#444"/>
+                            <TextBox x:Name="query_ResultTextBox" Grid.Row="3" Grid.Column="1" Margin="5 30 5 5" IsReadOnly="True" Background="LightBlue" VerticalScrollBarVisibility="Auto"/>
+                        </Grid>
+
+
+                    </Grid>
+
+                </TabItem>
+            </TabControl>
+        </Grid>
+
+    </Border>
+</Window>
