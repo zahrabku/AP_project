@@ -121,11 +121,11 @@
                             <TextBlock Grid.Row="2" Grid.Column="0" Text="•City :" Margin="5 5 0 40 "/>
                             <TextBlock Grid.Row="3" Grid.Column="0" Text="•Age Greater Than :" Margin="5 5 0 40 "/>
                             <TextBlock Grid.Row="4" Grid.Column="0" Text="•Age Less Then :" Margin="5 5 0 40 "/>
-                            <TextBox x:Name="query_NameTextBox" Grid.Row="0" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite"/>
-                            <TextBox x:Name="query_LastNameTextBox" Grid.Row="1" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite"/>
-                            <TextBox x:Name="query_CityTextBox" Grid.Row="2" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite"/>
-                            <TextBox x:Name="query_AgeGTTextBox" Grid.Row="3" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite" VerticalContentAlignment="Center" FontSize="16"/>
-                            <TextBox x:Name="query_AgeLTtextBox" Grid.Row="4" Grid.Column="0" Margin="5 30 5 5" Background="GhostWhite" VerticalContentAlignment="Center" FontSize="16"/>
+                            <TextBox x:Name="query_NameTextBox" Grid.Row="0" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite" BorderThickness="1"  BorderBrush="#555"/>
+                            <TextBox x:Name="query_LastNameTextBox" Grid.Row="1" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite" BorderThickness="1"  BorderBrush="#555"/>
+                            <TextBox x:Name="query_CityTextBox" Grid.Row="2" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite" BorderThickness="1"  BorderBrush="#555"/>
+                            <TextBox x:Name="query_AgeGTTextBox" Grid.Row="3" Grid.Column="0" Margin="5 30 5 0" Background="GhostWhite" BorderThickness="1"  BorderBrush="#555"/>
+                            <TextBox x:Name="query_AgeLTtextBox" Grid.Row="4" Grid.Column="0" Margin="5 30 5 5" Background="GhostWhite"  BorderThickness="1"  BorderBrush="#555"/>
                         </Grid>
                         <Grid Grid.Column="1">
                             <Grid.RowDefinitions>
@@ -135,12 +135,12 @@
                                 <RowDefinition Height="2*"/>
                             </Grid.RowDefinitions>
                             <TextBlock Grid.Row="0" Grid.Column="1" Text="•Equations :" Margin="5 5 0 90"/>
-                            <TextBlock Grid.Row="1" Grid.Column="1" Text="•Answers :" Margin="5 5 0 35"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="•Answers :" Margin="5 94 0 2"/>
                             <TextBlock Grid.Row="3" Grid.Column="1" Text="•Result :" Margin="5 5 0 90"/>
-                            <TextBox x:Name="query_equationTextBox" Grid.Row="0" Grid.Column="1" Margin="5 25 5 5"  Background="GhostWhite"/>
-                            <TextBox x:Name="query_AnswerTextBox" Grid.Row="1" Grid.Column="1" Margin="5 25 5 5" Background="GhostWhite"/>
+                            <TextBox x:Name="query_equationTextBox" Grid.Row="0" Grid.Column="1" Margin="5 25 5 20"  Background="GhostWhite" BorderThickness="1"  BorderBrush="#555" VerticalScrollBarVisibility="Auto"/>
+                            <TextBox x:Name="query_AnswerTextBox" Grid.Row="1" Grid.Column="1" Margin="5 5 5 5" Background="GhostWhite" BorderThickness="1"  BorderBrush="#555" VerticalScrollBarVisibility="Auto" />
                             <Button x:Name="query_bottun" Click="query_bottun_Click" Grid.Row="2" Grid.Column="1" Margin="5 5 5 5" Background="DarkGray" Content="Submit" FontSize="30" BorderThickness="2" BorderBrush="#444"/>
-                            <TextBox x:Name="query_ResultTextBox" Grid.Row="3" Grid.Column="1" Margin="5 30 5 5" IsReadOnly="True" Background="LightBlue" VerticalScrollBarVisibility="Auto"/>
+                            <TextBox x:Name="query_ResultTextBox" Grid.Row="3" Grid.Column="1" Margin="5 30 5 5" IsReadOnly="True" Background="LightBlue" VerticalScrollBarVisibility="Auto" BorderThickness="1"  BorderBrush="#555"/>
                         </Grid>
 
 

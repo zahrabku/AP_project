@@ -14,9 +14,21 @@ namespace project.back.domain.entity
 
         public Equation(string var1,string var2,string var3,double a1,double a2,double a3,double b1,double b2,double b3,double c1,double c2,double c3,double quant1,double quant2,double quant3)
         {
-            this.equation1 = $"{a1}{var1}{b1}{var2}{c1}{var3}={quant1}";
-            this.equation2 = $"{a2}{var1}{b2}{var2}{c2}{var3}={quant2}";
-            this.equation3 = $"{a3}{var1}{b3}{var2}{c3}{var3}={quant3}";
+            if (b1 > 0 && c1 > 0) { this.equation1 = $"{a1}{var1}+{b1}{var2}+{c1}{var3}={quant1}"; }
+            else if (b1 > 0) { this.equation1 = $"{a1}{var1}+{b1}{var2}{c1}{var3}={quant1}"; }
+            else if (c1 > 0) { this.equation1 = $"{a1}{var1}{b1}{var2}+{c1}{var3}={quant1}"; }
+            else { this.equation1 = $"{a1}{var1}{b1}{var2}{c1}{var3}={quant1}"; }
+
+            if (b2 > 0 && c2 > 0) { this.equation2 = $"{a2}{var1}+{b2}{var2}+{c2}{var3}={quant2}"; }
+            else if (b2 > 0) { this.equation2 = $"{a2}{var1}+{b2}{var2}{c2}{var3}={quant2}"; }
+            else if (c2 > 0) { this.equation2 = $"{a2}{var1}{b2}{var2}+{c2}{var3}={quant2}"; }
+            else { this.equation2 = $"{a2}{var1}{b2}{var2}{c2}{var3}={quant2}"; }
+
+            if (b3 > 0 && c3 > 0) { this.equation3 = $"{a3}{var1}+{b3}{var2}+{c3}{var3}={quant3}"; }
+            else if (b3 > 0) { this.equation3 = $"{a3}{var1}+{b3}{var2}{c3}{var3}={quant3}"; }
+            else if (c3 > 0) { this.equation3 = $"{a3}{var1}{b3}{var2}+{c3}{var3}={quant3}"; }
+            else { this.equation3 = $"{a3}{var1}{b3}{var2}{c3}{var3}={quant3}"; }
+
             if (a1 == 0 && b1 == 0 && c1 == 0 && quant1 == 0)
             {
                 equation1 = null;

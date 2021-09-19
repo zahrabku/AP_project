@@ -8,26 +8,19 @@ namespace project.back.util
 {
     class queryUtils
     {
-        private static string name="";
-        public static string QueryName { get { return name; } set { if (value != null) { name = value; } else { name = ""; } } }
+        public static string QueryName { get; set; } = "";
 
-        private static string lastName="";
-        public static string QueryLastName { get { return lastName; } set { if (value != null) { lastName = value; } else { lastName = ""; } } }
+        public static string QueryLastName { get; set; } = "";
 
-        private static string ageGT="";
-        public static string QueryAgeGT { get { return ageGT; } set { if (value != null) { ageGT = value; } else { ageGT = ""; } } }
+        public static string QueryAgeGT { get; set; } = "";
 
-        private static string ageLT="";
-        public static string QueryAgeLT { get { return ageLT; } set { if (value != null) { ageLT = value; } else { ageLT = ""; } } }
+        public static string QueryAgeLT { get; set; } = "";
 
-        private static string city="";
-        public static string QueryCity { get { return city; } set { if (value != null) { city = value; } else {city = ""; } } }
+        public static string QueryCity { get; set; } = "";
 
-        private static string equation="";
-        public static string QueryEquation { get { return equation; } set { if (value != null) { equation = value; } else { equation = ""; } } }
+        public static string QueryEquation { get; set; } = "";
 
-        private static string result="";
-        public static string QueryResult { get { return result; } set { if (value != null) {result = value; } else { result = ""; } } }
+        public static string QueryResult { get; set; } = "";
 
 
     }
