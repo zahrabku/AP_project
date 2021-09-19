@@ -1,0 +1,15 @@
+D:\CE\AP\project\project\bin\Debug\project.exe.config
+D:\CE\AP\project\project\bin\Debug\project.exe
+D:\CE\AP\project\project\bin\Debug\project.pdb
+D:\CE\AP\project\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+D:\CE\AP\project\project\obj\Debug\MainWindow.g.cs
+D:\CE\AP\project\project\obj\Debug\App.g.cs
+D:\CE\AP\project\project\obj\Debug\project_MarkupCompile.cache
+D:\CE\AP\project\project\obj\Debug\project_MarkupCompile.lref
+D:\CE\AP\project\project\obj\Debug\MainWindow.baml
+D:\CE\AP\project\project\obj\Debug\project.g.resources
+D:\CE\AP\project\project\obj\Debug\project.Properties.Resources.resources
+D:\CE\AP\project\project\obj\Debug\project.csproj.GenerateResource.Cache
+D:\CE\AP\project\project\obj\Debug\project.exe
+D:\CE\AP\project\project\obj\Debug\project.pdb
+D:\CE\AP\project\project\obj\Debug\project.csproj.ResolveComReference.cache
